@@ -1,0 +1,137 @@
+:root{
+    --warna-dasar: aliceblue;
+    --nav: #261771;
+    --warna-aksen: #cac416;
+    --warna-teks: #040b00;
+    --warna-teks-terang: aliceblue;
+    --font-judul: sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-judul);
+    background-color: var(--warna-dasar);
+    color: var(--warna-teks);
+    line-height: 1.6;
+    justify-content: center;
+}
+header{
+    padding: 40px 24px;
+    background-color: var(--nav);
+    text-align: center;
+}
+h1{
+font-family: var(--font-judul);
+color: aliceblue;
+font-size: 28px;
+}
+
+header h2{
+    font-family: var(--font-judul);
+    color: var(--warna-teks-terang);
+    font-size: 28px;
+    margin-bottom: 6px;
+
+}
+header p{
+    font-size: 14px;
+    color: var(--warna-teks-terang);
+    justify-content: center;
+    text-align: center;
+} 
+
+nav{
+    background-color: var(--nav);
+    border-bottom: 1px solid #d6e1d0;
+    position: sticky;
+    top: 0;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding: 14px;
+    flex-wrap: wrap;
+}
+nav li{
+    border: #261771;
+    border-width: 50px;
+    padding: 6px 14px;
+    gap:2px;
+    justify-content: center;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    color: aliceblue;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+nav a:hover{
+    color: var(--warna-aksen);
+    border-color: var(--warna-aksen);
+}
+
+main{
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 50px 24px;
+    text-align: center;
+}
+section{
+    margin-bottom: 48px;
+    justify-content: center;
+
+}
+section h2{
+    font-family: var(--font-judul);
+    font-size: 20px;
+    color: var(--warna-teks);
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #d6e1d0;
+
+}
+article{
+    margin-bottom: 22px;
+    border-radius: 20px;
+   
+}
+
+label{
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b8c4d0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+button{
+    background-color: var(--nav);
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14;
+}
+footer{
+    text-align: center;
+    background-color: #261771;
+    color: aliceblue;
+    padding: 24px;
+    font-size: 24px;
+}
